@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping
+	xmlns="urn:nhibernate-mapping-2.2"
+	namespace="UpDEV.BI.ReiDasVendas.Domains.Entities"
+	assembly="UpDEV.BI.ReiDasVendas.Domains.Entities">
+
+	<class name="OrderItemEntity" table="tb_order_item">
+		<id name="Id" column="id">
+			<generator class="identity" />
+		</id>
+
+		<many-to-one name="Order" column="order_id" lazy="false" not-null="true" />
+		<many-to-one name="Product" column="product_id" lazy="false" not-null="true" />
+		
+		<property name="Quantity" column="qtd" not-null="true" />
+		
+		<property name="CreatedAt" column="created_at" not-null="false" update="false" />
+		<property name="UpdatedAt" column="updated_at" not-null="false" />
+	</class>
+</hibernate-mapping>

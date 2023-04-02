@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping
+	xmlns="urn:nhibernate-mapping-2.2"
+	namespace="UpDEV.BI.ReiDasVendas.Domains.Entities"
+	assembly="UpDEV.BI.ReiDasVendas.Domains.Entities">
+
+	<class name="ProductEntity" table="tb_products">
+		<id name="Id" column="id">
+			<generator class="identity" />
+		</id>
+
+		<property name="Sku" column="sku" not-null="true" length="30" />
+		<property name="Name" column="name" not-null="true" length="250" />
+		
+		<many-to-one name="Category" column="category_id" lazy="false" not-null="true" />
+
+		<property name="CreatedAt" column="created_at" not-null="false" update="false" />
+		<property name="UpdatedAt" column="updated_at" not-null="false" />
+	</class>
+</hibernate-mapping>

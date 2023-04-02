@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>UpDEV.BI.ReiDasVendas.Infrastructures.Filemanager.CSV</AssemblyName>
+		<RootNamespace>UpDEV.BI.ReiDasVendas.Infrastructures.Filemanager.CSV</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="30.0.1" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>UpDEV.BI.ReiDasVendas.Infrastructures.Database</AssemblyName>
+		<RootNamespace>UpDEV.BI.ReiDasVendas.Infrastructures.Database</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+	  <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+	  <PackageReference Include="NHibernate" Version="5.4.1" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Database.Mapping\Database.Mapping.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>UpDEV.BI.ReiDasVendas.Infrastructures.Database.Mappings</AssemblyName>
+		<RootNamespace>UpDEV.BI.ReiDasVendas.Infrastructures.Database.Mappings</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Category.hbm.xml" />
+	  <None Remove="Order.hbm.xml" />
+	  <None Remove="OrderItem.hbm.xml" />
+	  <None Remove="Product.hbm.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Category.hbm.xml" />
+	  <EmbeddedResource Include="Order.hbm.xml" />
+	  <EmbeddedResource Include="OrderItem.hbm.xml" />
+	  <EmbeddedResource Include="Product.hbm.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Entities\Entities.csproj" />
+	</ItemGroup>
+
+</Project>
