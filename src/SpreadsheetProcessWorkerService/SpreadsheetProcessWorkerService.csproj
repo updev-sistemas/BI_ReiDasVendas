@@ -11,10 +11,13 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Database\Database.csproj" />
 	  <ProjectReference Include="..\Filemanager.CSV\Filemanager.CSV.csproj" />
+	  <ProjectReference Include="..\Filemanager\Filemanager.csproj" />
+	  <ProjectReference Include="..\ProcessingOrder\ProcessingOrder.csproj" />
 	</ItemGroup>
 </Project>

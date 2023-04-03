@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping
+	xmlns="urn:nhibernate-mapping-2.2"
+	namespace="UpDEV.BI.ReiDasVendas.Domains.Entities"
+	assembly="UpDEV.BI.ReiDasVendas.Domains.Entities">
+
+	<class name="TransactionFileEntity" table="tb_transaction_file">
+		<id name="Id" column="id">
+			<generator class="identity" />
+		</id>
+
+		<property not-null="true" length="300" name="OrderId" column="order_id" />
+		<property not-null="true" length="300" name="OrderDate" column="order_date" />
+		<property not-null="true" length="300" name="ProductSku" column="product_sku" />
+		<property not-null="true" length="300" name="ProductName" column="product_name" />
+		<property not-null="true" length="300" name="CategoryName" column="category_name" />
+		<property not-null="true" length="300" name="Status" column="status" />
+		
+		<property not-null="false" name="ProcessedAt" column="processed_at" />
+
+		<property name="CreatedAt" column="created_at" not-null="false" update="false" />
+		<property name="UpdatedAt" column="updated_at" not-null="false" />
+	</class>
+</hibernate-mapping>

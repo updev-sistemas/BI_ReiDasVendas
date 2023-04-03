@@ -1,26 +1,13 @@
-﻿using CsvHelper.Configuration.Attributes;
-
-namespace UpDEV.BI.ReiDasVendas.Infrastructures.Filemanager.CSV
+﻿namespace UpDEV.BI.ReiDasVendas.Domains.Entities
 {
-    public class MagaluModel
+    public class TransactionFileEntity : EntityBase
     {
-        [Name("id_pedido")]
         public virtual string? OrderId { get; set; }
-
-        [Name("data_criacao")]
         public virtual DateTime? OrderDate { get; set; }
-
-        [Name("sku_produto")]
         public virtual string? ProductSku { get; set; }
-
-        [Name("nome_produto")]
         public virtual string? ProductName { get; set; }
-
-        [Name("categoria")]
         public virtual string? CategoryName { get; set; }
-
-        [Name("faturado")]
         public virtual string? Status { get; set; }
-
+        public virtual DateTime? ProcessedAt { get; set; }
     }
 }

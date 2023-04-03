@@ -13,12 +13,14 @@
 	  <None Remove="Order.hbm.xml" />
 	  <None Remove="OrderItem.hbm.xml" />
 	  <None Remove="Product.hbm.xml" />
+	  <None Remove="TransactionFile.hbm.xml" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Category.hbm.xml" />
 	  <EmbeddedResource Include="Order.hbm.xml" />
 	  <EmbeddedResource Include="OrderItem.hbm.xml" />
+	  <EmbeddedResource Include="TransactionFile.hbm.xml" />
 	  <EmbeddedResource Include="Product.hbm.xml" />
 	</ItemGroup>
 
